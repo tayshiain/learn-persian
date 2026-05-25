@@ -187,6 +187,23 @@ function renderLearn() {
   const l = LESSONS[curLesson];
   let h = `<div class="intro-card"><h2>${l.title}</h2><p>${l.intro}</p></div>`;
 
+  // ---- POSSESSIVE SUFFIXES (grammar) ----
+  if (l.possSuffixes) {
+    h += `<div class="gram-box"><h3>Possessive Suffixes — پسوندهای ملکی</h3>
+    <div class="gram-note">Attach these endings directly to the end of a noun. If the noun ends in a vowel, insert a connecting <strong>-y-</strong> (e.g. پا + ـَش → پایَش).</div>
+    <table class="conj-table">
+      <tr><th>Person</th><th>Suffix</th><th>Example (ketāb)</th><th>Meaning</th></tr>`;
+    l.possSuffixes.forEach(r => {
+      h += `<tr>
+      <td style="font-size:12px;color:var(--text2)">${r.person}</td>
+      <td class="ct-fa" style="color:var(--accent2)">${r.fa} <span class="ct-ro">${r.ro}</span></td>
+      <td class="ct-fa" style="color:var(--gold)">${r.ex} <span class="ct-ro">(${r.exRo})</span></td>
+      <td style="font-size:12px;color:var(--text2)">${r.exEn}</td>
+    </tr>`;
+    });
+    h += `</table></div>`;
+  }
+
   // ---- ALPHABET: letter cards ----
   if (l.chars) {
     h += `<div class="label">New Letters</div><div class="char-grid">`;
@@ -428,9 +445,10 @@ function renderLearn() {
     <div class="dialogue">
     <div class="dlg-meta">${l.dialogue.title}</div>`;
     l.dialogue.lines.forEach(line => {
-      const right = line.who === 'B';
-      h += `<div class="dlg-line${right ? ' r' : ''}">
-        <div class="dlg-name ${line.who === 'A' ? 'a' : 'b'}">${line.name}</div>
+      const right = line.who === 'B' || line.who === 'C';
+      const nameClass = line.who === 'A' ? 'a' : (line.who === 'C' ? 'c' : 'b');
+      h += `<div class="dlg-line${right ? ' r' : ''}${line.who === 'C' ? ' dlg-c' : ''}">
+        <div class="dlg-name ${nameClass}">${line.name}</div>
         <div class="dlg-bubble">
           <div class="dlg-fa">${line.fa}</div>
           <div class="dlg-ro">${line.ro}</div>
