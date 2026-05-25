@@ -329,10 +329,12 @@ function renderLearn() {
       <table class="conj-table">
         <tr><th>Pronoun</th><th>Persian</th><th>Roman</th></tr>`;
       v.present.forEach(r => {
+        const spFa = r.fS ? `<div class="ct-spoken">${r.fS}</div>` : '';
+        const spRo = r.roS ? `<div class="ct-spoken">${r.roS}</div>` : '';
         h += `<tr>
           <td class="ct-pron">${r.p}<br><span style="font-size:10px">${r.pr} · ${r.e}</span></td>
-          <td class="ct-fa">${r.f}</td>
-          <td class="ct-ro">${r.ro}</td>
+          <td class="ct-fa">${r.f}${spFa}</td>
+          <td class="ct-ro">${r.ro}${spRo}</td>
         </tr>`;
       });
       h += `</table></div>`;
@@ -342,15 +344,17 @@ function renderLearn() {
       <table class="conj-table">
         <tr><th>Pronoun</th><th>Persian</th><th>Roman</th></tr>`;
       v.past.forEach(r => {
+        const spFa = r.fS ? `<div class="ct-spoken">${r.fS}</div>` : '';
+        const spRo = r.roS ? `<div class="ct-spoken">${r.roS}</div>` : '';
         h += `<tr>
           <td class="ct-pron">${r.p}<br><span style="font-size:10px">${r.pr}</span></td>
-          <td class="ct-fa">${r.f}</td>
-          <td class="ct-ro">${r.ro}</td>
+          <td class="ct-fa">${r.f}${spFa}</td>
+          <td class="ct-ro">${r.ro}${spRo}</td>
         </tr>`;
       });
       h += `</table></div></div>`; // end conj-grid
 
-      // Spoken short forms (بودن only)
+      // Spoken enclitic forms (e.g. بودن on adjectives) — separate from table spoken lines above
       if (v.spoken) {
         h += `<div style="margin-top:1.25rem"><div class="label" style="margin-bottom:.5rem">Spoken short forms — most common in daily speech</div>
         <table class="conj-table">
