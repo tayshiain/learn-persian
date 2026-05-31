@@ -663,6 +663,23 @@ function renderLearn() {
     h += `</div>`;
   }
 
+  // ---- VOCAB SECTIONS (culture lessons with month lists, etc.) ----
+  if (l.vocabSections && l.type === 'cult') {
+    l.vocabSections.forEach(sec => {
+      h += `<div class="vsec-title">${sec.title}</div><div class="vocab-list">`;
+      sec.items.forEach((v, i) => {
+        h += `<div class="vocab-item">
+          <div class="v-fa" style="color:${COLORS[i % 5]}">${v.fa}</div>
+          <div style="flex:1">
+            <div class="v-ro">${v.ro}</div>
+            <div class="v-en">${v.en}</div>
+          </div>
+        </div>`;
+      });
+      h += `</div>`;
+    });
+  }
+
   document.getElementById('sec-learn').innerHTML = h;
 }
 
