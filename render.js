@@ -450,8 +450,8 @@ function renderLearn() {
     <div class="dlg-meta">${l.dialogue.title}</div>`;
     l.dialogue.lines.forEach(line => {
       const right = line.who === 'B' || line.who === 'C';
-      const nameClass = line.who === 'A' ? 'a' : (line.who === 'C' ? 'c' : 'b');
-      h += `<div class="dlg-line${right ? ' r' : ''}${line.who === 'C' ? ' dlg-c' : ''}">
+      const nameClass = line.who === 'A' ? 'a' : (line.who === 'C' ? 'c' : (line.who === 'D' ? 'd' : 'b'));
+      h += `<div class="dlg-line${right ? ' r' : ''}${line.who === 'C' ? ' dlg-c' : ''}${line.who === 'D' ? ' dlg-d' : ''}">
         <div class="dlg-name ${nameClass}">${line.name}</div>
         <div class="dlg-bubble">
           <div class="dlg-fa">${line.fa}</div>

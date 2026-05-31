@@ -997,6 +997,8 @@ phrases:[
   {fa:'خوبَم، مَمنون.',ro:'Khubam, mamnun.',en:"I'm well, thank you."},
   {fa:'اِسمَت چیه؟',ro:'Esmet chiye?',en:"What's your name? (informal)"},
   {fa:'اِسمَم ... اَست.',ro:'Esme-man ... ast.',en:'My name is ...'},
+  {fa:'چَند سالَتِه؟',ro:'Chand sālat-e?',en:'How old are you? (informal)'},
+  {fa:'سی و شِش سالمِه.',ro:'Si-o-shesh sālam-e.',en:'I am 36 years old.'},
   {fa:'اَز آشنایی‌تون خوشحالَم.',ro:'Az āshnāyi-tun khushhālam.',en:'Pleased to meet you.'},
   {fa:'خُداحافِظ.',ro:'Khodāhāfez.',en:'Goodbye (formal)'},
   {fa:'بَعداً می‌بینَمَت.',ro:"Ba'dan mibinamat.",en:'See you later.'},
@@ -1930,11 +1932,11 @@ dialogue:{title:"At a general practitioner's clinic in Tehran",lines:[
   {who:'A',name:'منشی Secretary',fa:'سلام. نوبت دارید؟',ro:'Salām. Nobat dārid?',en:'Hello. Do you have an appointment?'},
   {who:'B',name:'بیمار Patient',fa:'بله، ساعت سه. اسمم علی احمدی.',ro:"Bale, sā'at se. Esmam Ali Ahmadi.",en:'Yes, at three. My name is Ali Ahmadi.'},
   {who:'A',name:'منشی Secretary',fa:'لطفاً بنشینید. دکتر الان میاد.',ro:'Lotfan benshinid. Doktor alān miād.',en:'Please sit down. The doctor will come now.'},
-  {who:'C',name:'دکتر Doctor',fa:'سلام. مشکلتون چیه؟',ro:'Salām. Moshkelatun chiye?',en:'Hello. What is your problem?'},
+  {who:'D',name:'دکتر Doctor',fa:'سلام. مشکلتون چیه؟',ro:'Salām. Moshkelatun chiye?',en:'Hello. What is your problem?'},
   {who:'B',name:'بیمار Patient',fa:'سه روزه سردرد دارم و تب هم دارم.',ro:'Se rūze sardard dāram va tab ham dāram.',en:'I have had a headache for three days and I also have a fever.'},
-  {who:'C',name:'دکتر Doctor',fa:'آلرژی به دارو دارید؟',ro:'Ālerji be dāru dārid?',en:'Do you have any drug allergies?'},
+  {who:'D',name:'دکتر Doctor',fa:'آلرژی به دارو دارید؟',ro:'Ālerji be dāru dārid?',en:'Do you have any drug allergies?'},
   {who:'B',name:'بیمار Patient',fa:'نه، آلرژی ندارم.',ro:'Na, ālerji nadāram.',en:'No, I have no allergies.'},
-  {who:'C',name:'دکتر Doctor',fa:'سرما خوردید. این نسخه رو ببرید داروخانه. استراحت کنید و آب زیاد بخورید.',ro:'Sarmā khorid. In noskhe rō bebarid dārukhāne. Esterāhat konid va āb ziyād bekhorid.',en:'You have a cold. Take this prescription to the pharmacy. Rest and drink plenty of water.'},
+  {who:'D',name:'دکتر Doctor',fa:'سرما خوردید. این نسخه رو ببرید داروخانه. استراحت کنید و آب زیاد بخورید.',ro:'Sarmā khorid. In noskhe rō bebarid dārukhāne. Esterāhat konid va āb ziyād bekhorid.',en:'You have a cold. Take this prescription to the pharmacy. Rest and drink plenty of water.'},
 ]},
 vocabSections:[
   {title:'Symptoms — علائم',items:[
