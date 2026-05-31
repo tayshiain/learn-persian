@@ -749,7 +749,68 @@ quiz:[
   {q:'خواست means:',c:'خواست',opts:['He/she wants','He/she will want','He/she wanted','He/she is wanting'],a:2},
 ]},
 
-{id:'g5',type:'gram',num:'G9',title:'[Verb] Goftan — To Say / To Tell',fa:'گفتن',level:'advanced',
+{id:'gs',type:'gram',num:'G8',title:'[Verb] Shodan — To Become',fa:'شدن',level:'intermediate',
+intro:'شدن (shodan) means "to become" — but in everyday Persian it does far more than that. It expresses change of state, possibility (می‌شه = "it can / it\'s possible"), and pairs with adjectives and nouns to describe how things turn out. You already heard it in بریم! دیر شد — "Let\'s go, we\'re late."',
+verbs:[{
+  inf:'شدن', ro:'shodan', en:'to become / to get / to happen',
+  pstem:'شو', pstemRo:'sho/shav', pastStem:'شد', pastStemRo:'shod',
+  note:'Standard conjugation: present stem شو- (sho-/shav-) + می- prefix. Past stem شد- (shod-). Spoken Persian shortens heavily: می‌شه (mishe) = it becomes / it is possible. With adjectives: [adjective] + شد = "got / became [adjective]" — دیر شد (dir shod) = it got late. With nouns: [noun] + شد = "became a [noun]" — دکتر شد (doktor shod) = became a doctor. Negative present: نمی‌شه (nemishe) = it is not possible / it cannot happen.',
+  present:[
+    {p:'من',pr:'man',e:'I',f:'می‌شوم',ro:'mishavam',fS:'می‌شم',roS:'misham'},
+    {p:'تو',pr:'to',e:'you (sg.)',f:'می‌شوی',ro:'mishavi',fS:'می‌شی',roS:'mishi'},
+    {p:'او',pr:'u',e:'he/she/it',f:'می‌شود',ro:'mishavad',fS:'می‌شه',roS:'mishe'},
+    {p:'ما',pr:'mā',e:'we',f:'می‌شویم',ro:'mishavim',fS:'می‌شیم',roS:'mishim'},
+    {p:'شما',pr:'shomā',e:'you (pl.)',f:'می‌شوید',ro:'mishavid',fS:'می‌شین',roS:'mishin'},
+    {p:'آنها',pr:'ānhā',e:'they',f:'می‌شوند',ro:'mishavand',fS:'می‌شن',roS:'mishan'},
+  ],
+  past:[
+    {p:'من',pr:'man',f:'شدم',ro:'shodam'},
+    {p:'تو',pr:'to',f:'شدی',ro:'shodi'},
+    {p:'او',pr:'u',f:'شد',ro:'shod'},
+    {p:'ما',pr:'mā',f:'شدیم',ro:'shodim'},
+    {p:'شما',pr:'shomā',f:'شدید',ro:'shodid',fS:'شدین',roS:'shodin'},
+    {p:'آنها',pr:'ānhā',f:'شدند',ro:'shodand',fS:'شدن',roS:'shodan'},
+  ],
+  spoken:[
+    {p:'—',e:'impersonal',suf:'می‌شه',sRo:'mishe',ex:'می‌شه بریم؟',exRo:'mishe berim?',exEn:'Can we go? / Is it possible to go?'},
+    {p:'—',e:'impersonal',suf:'نمی‌شه',sRo:'nemishe',ex:'نمی‌شه اینجا پارک کرد.',exRo:'nemishe injā pārk kard.',exEn:'You cannot park here.'},
+    {p:'—',e:'question',suf:'چی شد؟',sRo:'chi shod?',ex:'چی شد؟',exRo:'Chi shod?',exEn:'What happened?'},
+    {p:'—',e:'future wish',suf:'بشه',sRo:'beshe',ex:'امیدوارم خوب بشه.',exRo:'Omidvāram khub beshe.',exEn:'I hope it turns out well.'},
+  ],
+}],
+gramRules:[
+  {title:'Adjective + شد = change of state',body:'Attach any adjective directly to the past stem شد to say something got or became that way: <span style="color:var(--gold)">دیر شد</span> (dir shod) = it got late · <span style="color:var(--gold)">سرد شد</span> (sard shod) = it got cold · <span style="color:var(--gold)">خسته شدم</span> (khaste shodam) = I got tired. Present: <span style="color:var(--gold)">داره سرد می‌شه</span> (dāre sard mishe) = it is getting cold.'},
+  {title:'Noun + شد = became a [noun]',body:'The same pattern works with nouns: <span style="color:var(--gold)">دکتر شد</span> (doktor shod) = he/she became a doctor · <span style="color:var(--gold)">معلم شدم</span> (mo\'allem shodam) = I became a teacher. For "want to become," use the subjunctive بش-: <span style="color:var(--gold)">می‌خوام معلم بشم</span> (mikhām mo\'allem besham) = I want to become a teacher.'},
+  {title:'می‌شه — possibility, not just "becomes"',body:'On its own, می‌شه (mishe) is one of the most useful words in spoken Persian. It means "it is possible," "one can," or "it works": <span style="color:var(--gold)">می‌شه بریم؟</span> = Can we go? · <span style="color:var(--gold)">نمی‌شه</span> = It is not possible / You cannot. This impersonal use appears dozens of times in every conversation.'},
+  {title:'چی شد؟ — What happened?',body:'The past tense question <span style="color:var(--gold)">چی شد؟</span> (chi shod?) = "What happened?" is essential. Variants: <span style="color:var(--gold)">چطور شد؟</span> (chetour shod?) = How did it turn out? · <span style="color:var(--gold)">چرا شد؟</span> (cherā shod?) = Why did it happen? Iranians use these constantly to check on situations, outcomes, and news.'},
+],
+vocab:[
+  {fa:'می‌شه',ro:'mishe',en:'it becomes / it is possible / one can'},{fa:'نمی‌شه',ro:'nemishe',en:'it is not possible / cannot'},
+  {fa:'شدم',ro:'shodam',en:'I became / I got'},{fa:'دیر شد',ro:'dir shod',en:'it got late / we\'re late'},
+  {fa:'چی شد؟',ro:'chi shod?',en:'What happened?'},{fa:'خسته شدم',ro:'khaste shodam',en:'I got tired'},
+  {fa:'سرد شد',ro:'sard shod',en:'it got cold'},{fa:'می‌خوام معلم بشم',ro:'mikhām mo\'allem besham',en:'I want to become a teacher'},
+],
+sentences:[
+  {fa:'دیر شد. بریم!',ro:'Dir shod. Berim!',en:"It's late. Let's go!"},
+  {fa:'هوا سرد شد.',ro:'Havā sard shod.',en:'The weather got cold.'},
+  {fa:'می‌شه بریم؟',ro:'Mishe berim?',en:'Can we go? / Is it OK to go?'},
+  {fa:'نمی‌شه اینجا پارک کرد.',ro:'Nemishe injā pārk kard.',en:'You cannot park here.'},
+  {fa:'چی شد؟ همه‌چی خوبه؟',ro:'Chi shod? Hamechi khoobe?',en:'What happened? Is everything OK?'},
+  {fa:'خسته شدم.',ro:'Khaste shodam.',en:'I got tired.'},
+],
+culture:{icon:'🔄',tag:'Grammar',title:'می‌شه — The Word That Does Everything',
+fa:'می‌شه؟',ro:'Mishe?',en:'"Is it possible?" / "Can we?" — heard a hundred times a day',
+body:'شدن is the verb of transformation — weather turning cold, days getting late, people becoming doctors. But its impersonal form می‌شه (mishe) is arguably even more useful: it asks permission, checks possibility, and softens requests all at once. می‌شه بریم؟ is gentler than بریم! — "Can we go?" rather than "Let\'s go!" نمی‌شه politely refuses: نمی‌شه اینجا سیگار کشید — "You can\'t smoke here." Master شدن and you unlock how Persians talk about change, outcomes, and what is and is not allowed.'},
+quiz:[
+  {q:'می‌شه means:',c:'می‌شه',opts:['I become','You become','It becomes / it is possible','They became'],a:2},
+  {q:'دیر شد means:',c:'دیر شد',opts:['It is late (right now)','It got late / we\'re late','Go quickly!','It will be late'],a:1},
+  {q:'The past stem of شدن is:',c:'',opts:['شو','می‌شو','شد','شدن'],a:2},
+  {q:'چی شد؟ means:',c:'چی شد؟',opts:['What do you want?','What happened?','Where did you go?','How are you?'],a:1},
+  {q:'خسته شدم means:',c:'خسته شدم',opts:['I am tired (always)','I got tired','I want to rest','He got tired'],a:1},
+  {q:'نمی‌شه means:',c:'نمی‌شه',opts:['It is possible','It became','It is not possible / cannot','I do not become'],a:2},
+]},
+
+{id:'g5',type:'gram',num:'G10',title:'[Verb] Goftan — To Say / To Tell',fa:'گفتن',level:'advanced',
 intro:'گفتن (goftan) is the verb of communication — saying, telling, speaking. It has an irregular present stem بگو- / گو-, making it one of the most important irregular verbs to memorise. You will hear and use it in every conversation.',
 verbs:[{
   inf:'گفتن', ro:'goftan', en:'to say / to tell',
@@ -802,7 +863,7 @@ quiz:[
   {q:'بگو ببینم is used to:',c:'',opts:['Say goodbye','Invite someone to speak','Ask for directions','Express surprise'],a:1},
 ]},
 
-{id:'g6',type:'gram',num:'G10',title:'[Verb] Didan — To See / To Meet',fa:'دیدن',level:'advanced',
+{id:'g6',type:'gram',num:'G11',title:'[Verb] Didan — To See / To Meet',fa:'دیدن',level:'advanced',
 intro:'دیدن (didan) covers seeing, watching, and meeting people — three very common activities. It also has an important irregular feature: its present stem بین- shifts in spoken speech. Understanding it unlocks watching films, meeting friends, and visiting places.',
 verbs:[{
   inf:'دیدن', ro:'didan', en:'to see / to meet / to watch',
@@ -848,7 +909,7 @@ quiz:[
 ]},
 
 
-{id:'gp',type:'gram',num:'G8',title:'Prepositions',fa:'حروف اضافه',level:'intermediate',
+{id:'gp',type:'gram',num:'G9',title:'Prepositions',fa:'حروف اضافه',level:'intermediate',
 intro:'Persian prepositions are short, powerful words that glue sentences together. Unlike English, they are always placed before the noun (just like in English) — but Persian ones often contract with pronouns in speech. Master these five and you can express location, direction, accompaniment, origin, and purpose.',
 preps:[
   {fa:'از',ro:'az',en:'from / of / since / out of',
@@ -1434,7 +1495,7 @@ quiz:[
 ]},
 
 {id:'c8',type:'conv',num:'C8',title:'Shopping & Currency',fa:'خرید و پول',level:'intermediate',
-intro:'A2 level. Persian bazaars are legendary. Learn to ask prices, bargain politely, and understand Iran\'s currency system — Rials vs Tomans — which confuses even seasoned travellers!',
+intro:'A2 level. Persian bazaars are legendary. Learn to ask prices, bargain politely, and understand Iran\'s currency system — Rials vs Tomans — which confuses even seasoned travellers. At the centre of it all is خریدن (kharidan, to buy): present for what you\'re buying now, past for what you picked up, and می‌خوام … بخرم for "I want to buy…".',
 phrases:[
   {fa:'این چند تومانه؟',ro:'In chand tomāne?',en:'How much is this? (in Tomans)'},
   {fa:'گرونه! تخفیف میدید؟',ro:'Girone! Takhfif midid?',en:"It's expensive! Can you give a discount?"},
@@ -1452,6 +1513,36 @@ dialogue:{title:'In the bazaar, buying a carpet',lines:[
   {who:'B',name:'فروشنده Seller',fa:'نمیشه آقا. دو و نیم، آخرین قیمته.',ro:'Nemishe āghā. Do-o-nim, ākharin ghimate.',en:"Can't do it, sir. Two and a half — final price."},
   {who:'A',name:'مشتری Customer',fa:'باشه. قبوله. بسته‌بندی می‌کنید؟',ro:'Bāshe. Qabule. Baste-bandi mikonid?',en:'OK. Deal. Can you pack it?'},
 ]},
+verbs:[{
+  inf:'خریدن', ro:'kharidan', en:'to buy',
+  pstem:'خر', pstemRo:'khar', pastStem:'خرید', pastStemRo:'kharid',
+  note:'خریدن follows the standard verb pattern (like رفتن): present = می- + stem خر- + suffix · past = stem خرید- + suffix. Spoken forms drop vowels: می‌خره (mikhare), می‌خرین (mikhorin), می‌خرن (mikhoran). To say "I want to buy…", use می‌خوام + object + subjunctive بخرم (bekharam): می‌خوام این فرش رو بخرم = I want to buy this carpet. Negative present: نمی‌خرم (nemikhoram) = I\'m not buying / I won\'t buy.',
+  present:[
+    {p:'من',pr:'man',e:'I',f:'می‌خرم',ro:'mikhoram'},
+    {p:'تو',pr:'to',e:'you (sg.)',f:'می‌خری',ro:'mikhori'},
+    {p:'او',pr:'u',e:'he/she',f:'می‌خرد',ro:'mikhorad',fS:'می‌خره',roS:'mikhare'},
+    {p:'ما',pr:'mā',e:'we',f:'می‌خریم',ro:'mikhorim'},
+    {p:'شما',pr:'shomā',e:'you (pl.)',f:'می‌خرید',ro:'mikhorid',fS:'می‌خرین',roS:'mikhorin'},
+    {p:'آنها',pr:'ānhā',e:'they',f:'می‌خرند',ro:'mikhorand',fS:'می‌خرن',roS:'mikhoran'},
+  ],
+  past:[
+    {p:'من',pr:'man',f:'خریدم',ro:'kharidam'},
+    {p:'تو',pr:'to',f:'خریدی',ro:'kharidi'},
+    {p:'او',pr:'u',f:'خرید',ro:'kharid'},
+    {p:'ما',pr:'mā',f:'خریدیم',ro:'kharidim'},
+    {p:'شما',pr:'shomā',f:'خریدید',ro:'kharidid',fS:'خریدین',roS:'kharidin'},
+    {p:'آنها',pr:'ānhā',f:'خریدند',ro:'kharidand',fS:'خریدن',roS:'kharidan'},
+  ],
+}],
+sentences:[
+  {fa:'این فرش رو می‌خرم.',ro:'In farsh ro mikhoram.',en:"I'm buying this carpet."},
+  {fa:'شما چی می‌خرین؟',ro:'Shomā chi mikhorin?',en:'What are you buying?'},
+  {fa:'دیروز از بازار خریدیم.',ro:'Diruz az bāzār kharidim.',en:'We bought (things) from the bazaar yesterday.'},
+  {fa:'چی خریدی؟',ro:'Chi kharidi?',en:'What did you buy?'},
+  {fa:'می‌خوام یه کیف بخرم.',ro:'Mikhām ye kif bekharam.',en:'I want to buy a bag.'},
+  {fa:'می‌خوام این فرش رو بخرم.',ro:'Mikhām in farsh ro bekharam.',en:'I want to buy this carpet.'},
+  {fa:'می‌خواست یه کفش بخره ولی پول نداشت.',ro:'Mikhāst ye kafsh bekharad vali pul nadāsht.',en:"He/she wanted to buy shoes but didn't have money."},
+],
 vocabSections:[
   {title:'Shopping Vocabulary',items:[
     {fa:'بازار',ro:'bāzār',en:'bazaar / market (a Persian word used worldwide)'},
@@ -1482,6 +1573,14 @@ vocabSections:[
     {fa:'کیف',ro:'kif',en:'bag / purse'},
     {fa:'جواهرات',ro:'javāherāt',en:'jewellery'},
   ]},
+  {title:'خریدن — To Buy',items:[
+    {fa:'می‌خرم',ro:'mikhoram',en:'I buy / I\'m buying / I\'ll buy'},
+    {fa:'خریدم',ro:'kharidam',en:'I bought'},
+    {fa:'نمی‌خرم',ro:'nemikhoram',en:"I'm not buying / I won't buy"},
+    {fa:'بخر!',ro:'bekhar!',en:'Buy! (command)'},
+    {fa:'می‌خوام … بخرم',ro:'mikhām … bekharam',en:'I want to buy…'},
+    {fa:'چی خریدی؟',ro:'chi kharidi?',en:'What did you buy?'},
+  ]},
 ],
 culture:{icon:'🏺',tag:'Bazaar',title:'The Persian Bazaar — بازار',
 fa:'بازار',ro:'Bāzār',en:'"Market / Bazaar" — a Persian word used worldwide',
@@ -1490,8 +1589,10 @@ quiz:[
   {q:'این چند تومانه means:',c:'',opts:['What is this?','How much is this?','I want this','Too expensive'],a:1},
   {q:'1 Toman equals:',c:'',opts:['1 Rial','5 Rials','10 Rials','100 Rials'],a:2},
   {q:'فقط نگاه می‌کنم means:',c:'',opts:["I'll buy it",'How much?','Just looking','Very nice'],a:2},
+  {q:'می‌خرم means:',c:'می‌خرم',opts:['I want','I buy / I\'ll buy','I sold','I look'],a:1},
+  {q:'می‌خوام این فرش رو بخرم means:',c:'',opts:['I bought this carpet','I want to buy this carpet','This carpet is expensive','I am selling this carpet'],a:1},
   {q:'"Bazaar" is a word borrowed from:',c:'',opts:['Arabic','Turkish','Persian','French'],a:2},
-  {q:'باشه means:',c:'باشه',opts:['No','Maybe','OK / alright','Never'],a:2},
+  {q:'خریدم means:',c:'خریدم',opts:['I buy','I will buy','I bought','I want to buy'],a:2},
 ]},
 
 {id:'c9',type:'conv',num:'C9',title:'Cooking',fa:'آشپزی',level:'intermediate',
