@@ -479,6 +479,44 @@ function renderLearn() {
     }
   }
 
+  // ---- ARABIC BORROWINGS: duplicate letter groups (SC1) ----
+  if (l.letterGroups) {
+    h += `<div class="label">One Sound, Many Letters</div>
+    <div class="forms-wrap"><table class="conj-table letter-group-table">
+      <tr><th>Sound</th><th>Count</th><th>The Letters</th><th>Role in Persian</th></tr>`;
+    l.letterGroups.forEach(g => {
+      h += `<tr>
+        <td><strong style="color:var(--accent2)">${g.sound}</strong></td>
+        <td style="text-align:center;color:var(--text3)">${g.count}</td>
+        <td class="ct-fa" style="font-size:1.4rem;color:var(--gold);letter-spacing:.08em">${g.letters}</td>
+        <td style="font-size:12px;color:var(--text2);line-height:1.5">${g.note}</td>
+      </tr>`;
+    });
+    h += `</table></div>`;
+  }
+
+  if (l.scriptSections) {
+    l.scriptSections.forEach(r => {
+      h += `<div class="num-rule"><strong>${r.title}</strong><br>${r.body}</div>`;
+    });
+  }
+
+  if (l.spellExamples) {
+    h += `<div class="label">Spelling in the Wild — Persian vs Arabic Origin</div>
+    <div class="forms-wrap"><table class="conj-table spell-ex-table">
+      <tr><th>Word</th><th>Letter</th><th>Origin</th><th>Meaning</th></tr>`;
+    l.spellExamples.forEach(w => {
+      const originClass = w.origin === 'Arabic' ? 'spell-arabic' : 'spell-persian';
+      h += `<tr>
+        <td class="ct-fa" style="color:var(--gold)">${w.fa} <span class="ct-ro">${w.ro}</span></td>
+        <td class="ct-fa" style="font-size:1.25rem;color:var(--accent2)">${w.letter}</td>
+        <td><span class="spell-tag ${originClass}">${w.origin}</span></td>
+        <td style="font-size:12px;color:var(--text2)">${w.en}</td>
+      </tr>`;
+    });
+    h += `</table></div>`;
+  }
+
   // ---- TIMELINE ----
   if (l.timeline) {
     h += `<div class="label">Timeline of Persian History</div><div class="timeline">`;

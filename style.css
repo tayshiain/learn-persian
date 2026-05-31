@@ -259,6 +259,18 @@ body.light .dlg-line.dlg-c.r .dlg-bubble{border-color:var(--blue);box-shadow:0 0
 .cult-ro{font-size:13px;color:var(--text3);font-style:italic;margin-bottom:5px}
 .cult-en{font-size:14px;font-weight:500;margin-bottom:10px;color:var(--text2)}
 .cult-txt{font-size:13px;color:var(--text2);line-height:1.7}
+.cult-txt p{margin:0 0 .85em}
+.cult-txt p:last-child{margin-bottom:0}
+
+/* ===== SCRIPT LESSON (SC1) ===== */
+.letter-group-table th{text-align:left}
+.letter-group-table td{vertical-align:middle}
+.spell-ex-table .ct-ro{display:block;font-size:11px;margin-top:2px}
+.spell-tag{display:inline-block;font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;padding:2px 8px;border-radius:10px}
+.spell-persian{background:#0e1a14;color:var(--green);border:1px solid var(--green)}
+.spell-arabic{background:#1a140e;color:var(--gold);border:1px solid var(--gold)}
+body.light .spell-persian{background:#e8f5e8}
+body.light .spell-arabic{background:#fdf6e8}
 
 /* ===== CITIES ===== */
 .city-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-bottom:2rem}
