@@ -1,63 +1,96 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>فارسی — Learn Persian</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<div class="sidebar" id="sidebar">
-  <div class="sidebar-header">
-    <a class="sidebar-logo-link" id="sidebar-logo" href="index.html" onclick="goPage('welcome'); return false;">
-      <span class="logo-fa" data-cursor-element-id="cursor-el-1">
-        <img class="logo-image" src="images/Ketab%20transparent.png" alt="فارسی" />
-      </span>
-      <div class="logo-en" data-cursor-element-id="cursor-el-5">LEARN PERSIAN</div>
-    </a>
-  </div>
-  <div class="sidebar-search">
-    <input type="text" id="searchInput" placeholder="Search lessons..." oninput="filterLessons(this.value)">
-  </div>
-  <div id="sidebarContent"></div>
-</div>
-  <div class="sidebar-overlay" id="sidebarOverlay" onclick="closeSidebar()"></div>
-
-<div class="main">
-  <div class="topbar">
-      <button class="menu-btn" onclick="openSidebar()">☰ Menu</button>
-    <div class="topbar-title" id="topbarTitle">فارسی</div>
-    <div class="topbar-badge" id="topbarBadge"></div>
-    <button class="theme-toggle" onclick="toggleTheme()">
-      <span id="themeIcon">☀️</span>
-      <span id="themeLabel">Light</span>
-    </button>
-  </div>
-  <div class="content">
-    <div class="tabs">
-      <div class="tab active" data-tab="learn" onclick="switchTab('learn')">Learn</div>
-      <div class="tab" data-tab="vocab" onclick="switchTab('vocab')">Vocabulary</div>
-      <div class="tab" data-tab="culture" onclick="switchTab('culture')">Culture</div>
-      <div class="tab" data-tab="quiz" onclick="switchTab('quiz')">Quiz</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>فارسی — Learn Persian</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <a
+          class="sidebar-logo-link"
+          id="sidebar-logo"
+          href="index.html"
+          onclick="
+            goPage('welcome');
+            return false;
+          "
+        >
+          <span class="logo-fa" data-cursor-element-id="cursor-el-1">
+            <img
+              class="logo-image"
+              src="images/Ketab%20transparent.png"
+              alt="فارسی"
+            />
+          </span>
+          <div class="logo-en" data-cursor-element-id="cursor-el-5">
+            LEARN PERSIAN
+          </div>
+        </a>
+      </div>
+      <div class="sidebar-search">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search lessons..."
+          oninput="filterLessons(this.value)"
+        />
+      </div>
+      <div id="sidebarContent"></div>
     </div>
-    <div class="section active" id="sec-learn"></div>
-    <div class="section" id="sec-vocab"></div>
-    <div class="section" id="sec-culture"></div>
-    <div class="section" id="sec-quiz"></div>
-  </div>
-</div>
+    <div
+      class="sidebar-overlay"
+      id="sidebarOverlay"
+      onclick="closeSidebar()"
+    ></div>
 
-<script src="data.js"></script>
-<script src="state.js"></script>
-<script src="theme.js"></script>
-<script src="sidebar.js"></script>
-<script src="render.js"></script>
-<script src="quiz.js"></script>
-<script src="app.js"></script>
-  <!-- AI agent chatbot -->
-<script src='https://cdn.jotfor.ms/agent/embedjs/019db64271df7f1299507e5ca385798d12d9/embed.js'>
-</script>
-</body>
+    <div class="main">
+      <div class="topbar">
+        <button class="menu-btn" onclick="openSidebar()">☰ Menu</button>
+        <div class="topbar-title" id="topbarTitle">فارسی</div>
+        <div class="topbar-badge" id="topbarBadge"></div>
+        <button class="theme-toggle" onclick="toggleTheme()">
+          <span id="themeIcon">☀️</span>
+          <span id="themeLabel">Light</span>
+        </button>
+      </div>
+      <div class="content">
+        <div class="tabs">
+          <div class="tab active" data-tab="learn" onclick="switchTab('learn')">
+            Learn
+          </div>
+          <div class="tab" data-tab="vocab" onclick="switchTab('vocab')">
+            Vocabulary
+          </div>
+          <div class="tab" data-tab="culture" onclick="switchTab('culture')">
+            Culture
+          </div>
+          <div class="tab" data-tab="quiz" onclick="switchTab('quiz')">
+            Quiz
+          </div>
+        </div>
+        <div class="section active" id="sec-learn"></div>
+        <div class="section" id="sec-vocab"></div>
+        <div class="section" id="sec-culture"></div>
+        <div class="section" id="sec-quiz"></div>
+      </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="state.js"></script>
+    <script src="theme.js"></script>
+    <script src="sidebar.js"></script>
+    <script src="render.js"></script>
+    <script src="quiz.js"></script>
+    <script src="app.js"></script>
+  </body>
 </html>

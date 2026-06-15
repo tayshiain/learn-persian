@@ -13,7 +13,7 @@ chars:[
   {l:'ث',n:'Se',r:'s',d:'Like "s" in sun. Three dots above. Rare in everyday Persian.'},
 ],
 forms:[
-  {c:'ا',n:'Alef',s:'ا',i:'اَ',m:'ـا',f:'ـا',nc:true},
+  {c:'ا',n:'Alef',s:'ا',i:'آ',m:'ـا',f:'ـا',nc:true},
   {c:'ب',n:'Be',s:'ب',i:'بـ',m:'ـبـ',f:'ـب'},
   {c:'پ',n:'Pe',s:'پ',i:'پـ',m:'ـپـ',f:'ـپ'},
   {c:'ت',n:'Te',s:'ت',i:'تـ',m:'ـتـ',f:'ـت'},
@@ -518,8 +518,8 @@ intro:'Persian numbers from 11 onwards are beautifully regular. Teens end in a m
 nums11to100:[
   {f:'یازده',a:'۱۱',r:'yāzdah',v:'11'},{f:'دوازده',a:'۱۲',r:'davāzdah',v:'12'},
   {f:'سیزده',a:'۱۳',r:'sizdah',v:'13'},{f:'چهارده',a:'۱۴',r:'chahārdah',v:'14'},
-  {f:'پانزده',a:'۱۵',r:'pānzdah',v:'15'},{f:'شانزده',a:'۱۶',r:'shānzdah',v:'16'},
-  {f:'هفده',a:'۱۷',r:'hefdah',v:'17'},{f:'هجده',a:'۱۸',r:'hijdah',v:'18'},
+  {f:'پانزده',a:'۱۵',r:'pānzdah',s:'punzdah',v:'15'},{f:'شانزده',a:'۱۶',r:'shānzdah',s:'shunzdah',v:'16'},
+  {f:'هفده',a:'۱۷',r:'hefdah',v:'17'},{f:'هجده',a:'۱۸',r:'hejdah',s:'hijdah',v:'18'},
   {f:'نوزده',a:'۱۹',r:'nuzdah',v:'19'},{f:'بیست',a:'۲۰',r:'bist',v:'20'},
   {f:'سی',a:'۳۰',r:'si',v:'30'},{f:'چهل',a:'۴۰',r:'chehel',v:'40'},
   {f:'پنجاه',a:'۵۰',r:'panjāh',v:'50'},{f:'شصت',a:'۶۰',r:'shast',v:'60'},
@@ -556,7 +556,7 @@ intro:'Hundreds and thousands in Persian are straightforward. We also cover Iran
 nums100s:[
   {f:'صد',a:'۱۰۰',r:'sad',v:'100'},{f:'دویست',a:'۲۰۰',r:'devist',v:'200'},
   {f:'سیصد',a:'۳۰۰',r:'sisad',v:'300'},{f:'چهارصد',a:'۴۰۰',r:'chahārsad',v:'400'},
-  {f:'پانصد',a:'۵۰۰',r:'pānsad',v:'500'},{f:'ششصد',a:'۶۰۰',r:'sheshsad',v:'600'},
+  {f:'پانصد',a:'۵۰۰',r:'pānsad',s:'punsad',v:'500'},{f:'ششصد',a:'۶۰۰',r:'sheshsad',v:'600'},
   {f:'هفتصد',a:'۷۰۰',r:'haftsad',v:'700'},{f:'هشتصد',a:'۸۰۰',r:'hashtsad',v:'800'},
   {f:'نهصد',a:'۹۰۰',r:'nohsad',v:'900'},{f:'هزار',a:'۱۰۰۰',r:'hezār',v:'1000'},
 ],
@@ -810,12 +810,11 @@ quiz:[
   {q:'نمی‌شه means:',c:'نمی‌شه',opts:['It is possible','It became','It is not possible / cannot','I do not become'],a:2},
 ]},
 
-{id:'g4s',type:'gram',num:'G9.5',title:'The Present Subjunctive — Want, Must, Can',fa:'وجه التزامی',level:'advanced',
-intro:'In Persian, whenever you use verbs like "want" (خواستن), "must/should" (باید), or "can" (توانستن), the second action verb cannot stay as an infinitive. It must conjugate to match the person. Instead of "I want to buy," Persian speakers say "I want [that] I buy." This is the present subjunctive — one of the most essential patterns in Persian conversation.',
+{id:'g4s',type:'gram',num:'G10',title:'The Present Subjunctive — Want, Must, Can',fa:'وجه التزامی',level:'advanced',
+intro:'In Persian, whenever you use verbs like "want" (خواستن), "must/should" (باید), or "can" (توانستن), the second action verb cannot stay as an infinitive. It must conjugate to match the person. Instead of "I want to buy," Persian speakers say "I want [that] I buy." This is the present subjunctive, used to express possibility, doubt, obligation, or a wish.',
 gramRules:[
   {title:'The Core Pattern: Be- + Stem + Ending',body:'To make the subjunctive, take any infinitive, remove -ن, then add <span style="color:var(--gold)">be-</span> at the start: <span style="color:var(--gold)">be-</span> + <span style="color:var(--gold)">stem</span> + <span style="color:var(--gold)">personal ending</span>. Example with خریدن (to buy): <span style="color:var(--gold)">be-khar-am</span> (bekharam) = [that] I buy · <span style="color:var(--gold)">be-khar-ad</span> (bekharad/bekhare) = [that] he/she buys. The <span style="color:var(--gold)">be-</span> prefix signals intention or obligation; the suffix carries the person (I, you, he, etc.).'},
   {title:'Why Persian Does This',body:'English uses infinitives: "I want <span style="color:var(--gold)">to buy</span> a carpet." Persian conjugates: "I want <span style="color:var(--gold)">that I buy</span> a carpet" = <span style="color:var(--gold)">می‌خوام این فرش رو بخرم</span> (mikhām in farsh ro bekharam). This happens after خواستن (want), باید (must), توانستن (can), and several other modal verbs. The Persian way links the wanter and the action into one grammatical moment.'},
-  {title:'Common Verbs Triggering the Subjunctive',body:'<span style="color:var(--gold)">می‌خوام … بخرم</span> = I want to buy · <span style="color:var(--gold)">باید برم</span> = I must go · <span style="color:var(--gold)">می‌تونم ببینم</span> = I can see · <span style="color:var(--gold)">می‌خوام یاد بگیرم</span> = I want to learn. These patterns appear in every conversation. Master them and you unlock natural Persian speech.'},
   {title:'Subjunctive vs. Regular Present — When to Use Which',body:'Regular present with می-: <span style="color:var(--gold)">می‌خرم</span> (I am buying / I buy [right now]). Subjunctive with be-: <span style="color:var(--gold)">بخرم</span> (I buy [in a context of wanting, needing, or intending to]). The subjunctive feels distant or intentional; the regular present feels immediate or habitual. "I\'m buying milk today" = <span style="color:var(--gold)">امروز شیر می‌خرم</span> (emruz shir mikharam). "I want to buy milk" = <span style="color:var(--gold)">می‌خوام شیر بخرم</span> (mikhām shir bekharam).'},
 ],
 vocab:[
@@ -835,7 +834,7 @@ sentences:[
   {fa:'می‌خوام فارسی یاد بگیرم.',ro:'Mikhām Fārsi yād begīram.',en:'I want to learn Persian.'},
   {fa:'باید این کتاب رو بخونم.',ro:'Bāyad īn ketāb ro bakhoonam.',en:'I have to read this book.'},
   {fa:'او می‌خواد بره کار.',ro:'U mikhād bere kār.',en:'He/she wants to go to work.'},
-  {fa:'آنها باید بیان میتینگ.',ro:'Ānhā bāyad biyān miting.',en:'They have to come to the meeting.'},
+  {fa:'من باید به میتینگ برم.',ro:'Man bāyad be miting beram.',en:'i have to go to a meeting'},
 ],
 culture:{icon:'🎯',tag:'Grammar',title:'The Be- Prefix: From Command to Intention',
 fa:'بریم!',ro:'Berim!',en:'"Let\'s go!" — be- appears in commands, wishes, and obligations alike',
@@ -849,7 +848,7 @@ quiz:[
   {q:'بخرم vs می‌خرم — what is the difference?',c:'',opts:['Gender','Formal vs spoken','Intentional (want/must) vs immediate present','Nothing — they\'re the same'],a:2},
 ]},
 
-{id:'g5',type:'gram',num:'G10',title:'[Verb] Goftan — To Say / To Tell',fa:'گفتن',level:'advanced',
+{id:'g5',type:'gram',num:'G11',title:'[Verb] Goftan — To Say / To Tell',fa:'گفتن',level:'advanced',
 intro:'گفتن (goftan) is the verb of communication — saying, telling, speaking. It has an irregular present stem بگو- / گو-, making it one of the most important irregular verbs to memorise. You will hear and use it in every conversation.',
 verbs:[{
   inf:'گفتن', ro:'goftan', en:'to say / to tell',
@@ -902,7 +901,7 @@ quiz:[
   {q:'بگو ببینم is used to:',c:'',opts:['Say goodbye','Invite someone to speak','Ask for directions','Express surprise'],a:1},
 ]},
 
-{id:'g6',type:'gram',num:'G11',title:'[Verb] Didan — To See / To Meet',fa:'دیدن',level:'advanced',
+{id:'g6',type:'gram',num:'G12',title:'[Verb] Didan — To See / To Meet',fa:'دیدن',level:'advanced',
 intro:'دیدن (didan) covers seeing, watching, and meeting people — three very common activities. It also has an important irregular feature: its present stem بین- shifts in spoken speech. Understanding it unlocks watching films, meeting friends, and visiting places.',
 verbs:[{
   inf:'دیدن', ro:'didan', en:'to see / to meet / to watch',
@@ -1102,10 +1101,13 @@ phrases:[
   {fa:'ساعَت شِش و رُبع.',ro:"Sā'at shesh-o-rob'.",en:'Quarter past six (6:15).'},
   {fa:'ساعَت هَفت و بیست دَقیقِه.',ro:"Sā'at haft-o-bist daqiqe.",en:'Twenty past seven (7:20).'},
   {fa:'ساعَت دَه کَم دَه.',ro:"Sā'at dah kam dah.",en:'Ten to ten (9:50).'},
+  {note:'While you use "kam" for regular minutes, "be" is the correct and standard term used specifically with quarters.'},
+  {fa:'ساعَت رُب به ده.',ro:"Sā'at rob be dah.",en:'Quarter to ten (9:45).'},
   {fa:'اِمروز چِه روزیه؟',ro:'Emruz che ruzi-ye?',en:'What day is it today?'},
   {fa:'اِمروز دوشَنبِه اَست.',ro:'Emruz doshanbe ast.',en:'Today is Monday.'},
   {fa:'جُمعه آزادَم.',ro:"Jom'e āzādam.",en:"I'm free on Friday."},
   {fa:'دیر شُد!',ro:'Dir shod!',en:"We're late!"},
+  {fa:'زود بیدار شدم.',ro:'Zood bidār shodam.',en:'I woke up early.'},
 ],
 days:[
   {fa:'شنبه',ro:'shanbe',en:'Saturday — start of the Persian week'},
@@ -1381,7 +1383,9 @@ quiz:[
 intro:'A1 level. Words for the classroom — things on your desk, how to ask the teacher to repeat or slow down, and phrases for when you are asked to read aloud or write on the board. Useful in a Persian class or when talking about school life.',
 phrases:[
   {fa:'لُطفاً دوباره بِگید.',ro:'Lotfan dobāre begid.',en:'Please say it again. (formal to teacher)'},
+  {fa:'یک جمله بسازید.',ro:"Yek jomle besāzid.",en:'Make a sentence.'},
   {fa:'مُتوجِه نَشُدَم.',ro:'Motavajeh nashodam.',en:"I didn't understand."},
+  {fa:'متوجه میشم.',ro:'Motavajeh misham.',en:'I understand.'},
   {fa:'تَکلیفَت رو نوشتی؟',ro:'Taklifet ro neveshti?',en:'Did you do your homework? (lit. did you write your homework?)'},
   {fa:'می‌شِه آهِسته‌تَر بِگید؟',ro:'Mishe āhestetar begid?',en:'Could you speak more slowly?'},
   {fa:'سُوال دارَم.',ro:'Soāl dāram.',en:'I have a question.'},
@@ -1631,7 +1635,7 @@ quiz:[
 {id:'c9',type:'conv',num:'C9',title:'Cooking',fa:'آشپزی',level:'intermediate',
 intro:'A2 level. Kitchen vocabulary and recipe language — pots, utensils, heat, and the verbs you see in Persian cookbooks and cooking videos. Focus on technique and equipment so you can follow a recipe step by step.',
 phrases:[
-  {fa:'اول پیاز را خرد کنید.',ro:'Avval piyāz rā khard konid.',en:'First, chop the onion.'},
+  {fa:'اول پیاز را خرد کنید.',ro:'Avval piyāz rā khord konid.',en:'First, chop the onion.'},
   {fa:'روغن را داغ کنید.',ro:'Roghan rā dāgh konid.',en:'Heat the oil.'},
   {fa:'مواد را هم بزنید.',ro:'Mavād rā ham bezanid.',en:'Stir the ingredients.'},
   {fa:'بگذارید بجوشد.',ro:'Begozārid bejushad.',en:'Let it boil.'},
@@ -1642,7 +1646,7 @@ phrases:[
 ],
 dialogue:{title:'Following a recipe with a friend',lines:[
   {who:'A',name:'سارا Sārā',fa:'اول چی کار کنیم؟',ro:'Avval chi kār konim?',en:'What should we do first?'},
-  {who:'B',name:'رضا Rezā',fa:'پیاز و سیر رو خرد کن. بعد توی تابه روغن داغ کن.',ro:'Piyāz o sir rō khard kon. Ba\'d tū tābe roghan dāgh kon.',en:'Chop the onion and garlic. Then heat oil in the pan.'},
+  {who:'B',name:'رضا Rezā',fa:'پیاز و سیر رو خرد کن. بعد توی تابه روغن داغ کن.',ro:'Piyāz o sir rō khord kon. Ba\'d tū tābe roghan dāgh kon.',en:'Chop the onion and garlic. Then heat oil in the pan.'},
   {who:'A',name:'سارا Sārā',fa:'چقدر بذارم بپزه؟',ro:'Cheghadr bezāram bepaze?',en:'How long should I let it cook?'},
   {who:'B',name:'رضا Rezā',fa:'حدود ده دقیقه، هم بزن که نسوزه.',ro:'Hodud dah daqiqe, ham bezan ke nasuze.',en:'About ten minutes — stir so it does not burn.'},
   {who:'A',name:'سارا Sārā',fa:'آب رو کی اضافه کنم؟',ro:'Āb rō key ezāfe konam?',en:'When do I add the water?'},
@@ -2112,7 +2116,7 @@ quiz:[
   {q:'The Islamic Revolution in Iran was in:',c:'',opts:['1953','1963','1979','1989'],a:2},
 ]},
 
-{id:'t7',type:'cult',num:'T7',title:'Persian Calendars & Months',fa:'تقویم و ماه‌ها',level:'beginner',
+{id:'t7',type:'cult',num:'T2',title:'Persian Calendars & Months',fa:'تقویم و ماه‌ها',level:'beginner',
 intro:'Iran uses two month systems in everyday life. Official dates, holidays, and Nowruz follow the Solar Hijri (شمسی / Jalali) calendar. International names — ژانویه، فوریه، and the rest — come from the Gregorian calendar and appear on phones, tickets, and foreign news. Learning both sets is essential for reading dates and making plans.',
 scriptSections:[
   {title:'Solar Hijri (شمسی) — the Persian civil calendar',body:'Iran\'s official calendar is solar: months follow the seasons, and the year begins at the spring equinox (Nowruz, around 21 March). Month 1 is <strong>فروردین</strong> (Farvardin). Birth certificates, bills, and TV news use these names. The year number is often written with Persian numerals (e.g. ۱۴۰۴).'},
@@ -2160,7 +2164,7 @@ quiz:[
   {q:'اسفند is:',c:'اسفند',opts:['Month 1 of the Persian year','Month 12 of the Solar Hijri year','A Gregorian month','A type of bread'],a:1},
 ]},
 
-{id:'t2',type:'cult',num:'T2',title:'Famous Cities — Tehran & Isfahan',fa:'تهران و اصفهان',level:'intermediate',
+{id:'t2',type:'cult',num:'T3',title:'Famous Cities — Tehran & Isfahan',fa:'تهران و اصفهان',level:'intermediate',
 intro:'Iran\'s two most iconic cities: Tehran, the vast modern capital, and Isfahan, the jewel of Safavid architecture. Each has its own unmistakable soul.',
 cities:[
   {name:'Tehran',fa:'تهران',desc:'Capital and megacity of 15+ million. The Alborz mountains frame its northern skyline with ski slopes visible year-round. A city of traffic, culture, incredible food, and palpable energy.',sights:'Milad Tower · Golestan Palace · Grand Bazaar · Darband hiking trail · Tehran Museum of Contemporary Art'},
@@ -2183,7 +2187,7 @@ quiz:[
   {q:'Which sport was historically played at Naqsh-e Jahan?',c:'',opts:['Wrestling','Archery','Polo','Football'],a:2},
 ]},
 
-{id:'t3',type:'cult',num:'T3',title:'Famous Cities — Shiraz & Persepolis',fa:'شیراز و تخت جمشید',level:'intermediate',
+{id:'t3',type:'cult',num:'T4',title:'Famous Cities — Shiraz & Persepolis',fa:'شیراز و تخت جمشید',level:'intermediate',
 intro:'Shiraz is the city of poets, roses, and gardens. Nearby lies Persepolis — the greatest surviving monument of ancient Persia. Together they form the essential cultural journey of the south.',
 cities:[
   {name:'Shiraz',fa:'شیراز',desc:'City of Hafez and Saadi — Iran\'s two greatest lyric poets. Famous for its roses, gardens, and the spectacular Pink Mosque. Warm, laid-back, and strikingly beautiful.',sights:'Tomb of Hafez · Tomb of Saadi · Nasir-ol-Molk (Pink) Mosque · Eram Garden · Vakil Bazaar'},
@@ -2206,7 +2210,7 @@ quiz:[
   {q:'The "Pink Mosque" is in:',c:'',opts:['Tehran','Isfahan','Shiraz','Tabriz'],a:2},
 ]},
 
-{id:'t4',type:'cult',num:'T4',title:'Persian Poetry — Two Great Poets',fa:'شعر ایرانی',level:'advanced',
+{id:'t4',type:'cult',num:'T6',title:'Persian Poetry — Two Great Poets',fa:'شعر ایرانی',level:'advanced',
 intro:'Persian is one of the world\'s great literary languages — its poetry shaped civilisations, consoled exiles, and articulated the deepest human emotions. Two names stand above all others: Hafez and Rumi. This lesson explores their lives, their most celebrated verses, and why their words still resonate after seven centuries.',
 poets:[
   {
@@ -2250,7 +2254,7 @@ quiz:[
 ]},
 
 
-{id:'t6',type:'cult',num:'T6',title:'Persian Cuisine — Recipes & Culture',fa:'آشپزی ایرانی',level:'advanced',
+{id:'t6',type:'cult',num:'T7',title:'Persian Cuisine — Recipes & Culture',fa:'آشپزی ایرانی',level:'advanced',
 intro:'Go beyond tasting — understand the craft. Persian cuisine is one of the world\'s great food traditions built on aromatic layering, saffron, dried fruits, and slow cooking. This lesson gives you cultural depth, key vocabulary, and step-by-step recipes for three iconic dishes.',
 dishGroups:[
   {icon:'🍚',title:'Rice Dishes — پلو و چلو',body:'Persian rice (برنج berenj) is an art form. Chelow (چلو) is plain steamed white rice with a crispy golden crust — tah-dig (ته‌دیگ). Polo (پلو) is rice cooked with herbs, fruits, or legumes. Famous examples: zereshk polo (زرشک‌پلو — barberry rice with saffron chicken), shirin polo (شیرین‌پلو — sweet rice with orange peel), and sabzi polo (سبزی‌پلو — herb rice for Nowruz).'},

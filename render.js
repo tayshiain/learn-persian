@@ -284,7 +284,8 @@ function renderLearn() {
   if (l.nums11to100) {
     h += `<div class="label">Numbers 11–100</div><div class="num-box"><div class="num-grid">`;
     l.nums11to100.forEach(n => {
-      h += `<div class="num-card"><div class="nf" style="font-size:16px">${n.f}</div><div class="na">${n.a}</div><div class="nr">${n.r}</div><div class="nv">${n.v}</div></div>`;
+      const spk = n.s ? `<div class="ns">${n.s}</div>` : '';
+      h += `<div class="num-card"><div class="nf" style="font-size:16px">${n.f}</div><div class="na">${n.a}</div><div class="nr">${n.r}</div>${spk}<div class="nv">${n.v}</div></div>`;
     });
     h += `</div></div>`;
     if (l.numRules) {
@@ -299,7 +300,8 @@ function renderLearn() {
   if (l.nums100s) {
     h += `<div class="label">Hundreds & Thousands</div><div class="num-box"><div class="num-grid">`;
     l.nums100s.forEach(n => {
-      h += `<div class="num-card"><div class="nf" style="font-size:15px">${n.f}</div><div class="na">${n.a}</div><div class="nr" style="font-size:12px">${n.r}</div><div class="nv">${n.v}</div></div>`;
+      const spk = n.s ? `<div class="ns">${n.s}</div>` : '';
+      h += `<div class="num-card"><div class="nf" style="font-size:15px">${n.f}</div><div class="na">${n.a}</div><div class="nr" style="font-size:12px">${n.r}</div>${spk}<div class="nv">${n.v}</div></div>`;
     });
     h += `</div></div>`;
     if (l.numRules) {

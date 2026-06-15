@@ -43,7 +43,7 @@ body.light{
 body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min-height:100vh}
 
 /* ===== SIDEBAR ===== */
-.sidebar{position:fixed;left:0;top:0;width:325px;height:100vh;background:var(--bg2);border-right:1px solid var(--border);overflow-y:auto;z-index:100;display:flex;flex-direction:column}
+.sidebar{position:fixed;left:0;top:0;width:325px;height:100vh;height:100dvh;background:var(--bg2);border-right:1px solid var(--border);overflow-y:auto;z-index:100;display:flex;flex-direction:column}
 .sidebar-header{padding:1rem 1.25rem 1rem;border-bottom:1px solid var(--border)}
 .sidebar-logo-link{text-decoration:none;color:inherit;display:block;padding-top:.35rem;padding-bottom:.15rem}
 .sidebar-logo-link:hover,
@@ -198,6 +198,7 @@ body.light .nc-badge{background:#ffe0cc}
 .na{font-size:18px;color:var(--gold);margin-bottom:2px}
 .nr{font-size:12px;color:var(--blue);margin-bottom:2px}
 .nv{font-size:14px;font-weight:500;color:var(--text2)}
+.ns{font-size:11px;color:var(--text3);font-style:italic;margin-bottom:2px}
 .num-rule{background:var(--card);border:1px solid var(--border);border-left:3px solid var(--gold);border-radius:8px;padding:.75rem 1rem;margin-bottom:.75rem;font-size:13px;color:var(--text2);line-height:1.7}
 .num-rule strong{color:var(--gold)}
 
@@ -359,6 +360,7 @@ body.light .q-fb.no{background:#fce8e8}
   .sidebar{
     width:min(300px,82vw);
     height:100vh;
+    height:100dvh;
     position:fixed;
     left:0;
     top:0;
@@ -366,6 +368,7 @@ body.light .q-fb.no{background:#fce8e8}
     transition:transform .3s ease;
     z-index:200;
     overflow-y:auto;
+    padding-bottom:env(safe-area-inset-bottom);
   }
   .sidebar.open{transform:translateX(0)}
   .sidebar-overlay.show{display:block}
