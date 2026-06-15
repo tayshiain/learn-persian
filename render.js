@@ -245,7 +245,11 @@ function renderLearn() {
       <span style="text-align:right">Persian</span><span>Pronunciation</span><span>Meaning</span>
     </div>`;
     l.phrases.forEach(p => {
-      h += `<div class="phrase-item"><span class="p-fa">${p.fa}</span><span class="p-ro">${p.ro}</span><span class="p-en">${p.en}</span></div>`;
+      if (p.note) {
+        h += `<div class="vowel-box" style="margin:.25rem 0">${p.note}</div>`;
+      } else {
+        h += `<div class="phrase-item"><span class="p-fa">${p.fa}</span><span class="p-ro">${p.ro}</span><span class="p-en">${p.en}</span></div>`;
+      }
     });
     h += `</div>`;
   }
